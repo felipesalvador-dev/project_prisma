@@ -2,7 +2,7 @@ const express = require("express")
 
 const route = express.Router()
 
-const {listar, cadastrar, buscarPorId, atualizar, deletar} = require("../controllers/usuario.controller.js");
+const {listar, cadastrar, buscarPorId, atualizar, deletar} = require("../controllers/usuario.controller");
 
 route.get("/listar", listar);
 route.post("/cadastrar", cadastrar)
